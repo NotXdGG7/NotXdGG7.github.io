@@ -1,0 +1,25 @@
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-box {
+    background: #112e42;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    border: 2px solid #00abf0;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background: #112e42;
+    padding: 20px;
+    border-radius: 10px;
+}
