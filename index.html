@@ -1,73 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NotXdGG Portfolio</title>
+  <title>NotXdGG</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <div class="logo">
-    <img src="images/logo.png">
+    <a href="index.html" class="logo-wrap">
+      <img src="images/logo.png" class="logo-img">
+      <span class="crown">👑</span>
+    </a>
   </div>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="portfolio.html">Portfolio</a>
-    <a href="feedback.html">Feedbacks</a>
+    <a href="feedback.html">Feedback</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-
-  <h1>Hi, I'm NotXdGG, Minecraft Developer & Web Designer.</h1>
-
-  <p>
-    I create advanced Minecraft configurations and server setups. I also build modern
-    websites and systems with smooth performance and clean UI.
-  </p>
+  <h1>Hi, I'm NotXdGG</h1>
+  <p>Minecraft Developer & Web Designer creating high-performance systems.</p>
 
   <div class="hero-buttons">
-    <a href="portfolio.html" class="btn primary">View My Work →</a>
-    <a href="contact.html" class="btn secondary">Contact Me →</a>
+    <a href="portfolio.html" class="btn primary">View Work</a>
+    <a href="contact.html" class="btn secondary">Contact</a>
   </div>
 
-  <!-- STATS -->
   <div class="stats">
-
     <div class="stat">
       <h2 class="counter" data-target="20">0</h2>
       <span>👥 Clients</span>
     </div>
-
     <div class="stat">
       <h2 class="counter" data-target="128">0</h2>
-      <span>⭐ 5-Star Reviews</span>
+      <span>⭐ Reviews</span>
     </div>
-
   </div>
-
 </section>
 
-<!-- COUNTER SCRIPT -->
 <script>
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-  const update = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
-
-    const speed = 50;
-    const increment = target / speed;
-
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(update, 30);
+document.querySelectorAll('.counter').forEach(c=>{
+  const update=()=>{
+    let t=+c.dataset.target, n=+c.innerText;
+    let inc=t/40;
+    if(n<t){
+      c.innerText=Math.ceil(n+inc);
+      setTimeout(update,30);
     } else {
-      counter.innerText = target + (target == 20 ? "+" : "");
+      c.innerText=t+(t==20?"+":"");
     }
   };
   update();
