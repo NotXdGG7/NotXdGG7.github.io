@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #1e293b;
+}
+
+nav a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* LOGO */
+.logo img {
+  height: 40px;
+}
+
+/* HERO */
+.hero {
+  padding: 60px;
+  text-align: center;
+}
+
+/* BUTTON */
+.btn {
+  background: #22c55e;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* PROJECT CARD */
+.item {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid #00ff88;
+  position: relative;
+  transition: 0.3s;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  border-radius: 8px;
+  border: 2px solid #00ff88;
+}
+
+.players {
+  display: block;
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ff88;
+}
+
+/* TESTIMONIALS */
+.review {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #00ff88;
+}
