@@ -552,42 +552,52 @@ nav a:hover {
     flex-direction: column;
   }
 }
-/* STAFF SECTION */
+/* Staff Section */
 .staff {
-  padding: 60px 20px;
-  background: #0b1a2a;
+  margin-top: 60px;
+}
+
+.sub-title {
   text-align: center;
-}
-
-.staff h1 {
+  font-size: 26px;
   color: #fff;
-  margin-bottom: 30px;
 }
 
-.staff-box {
-  max-width: 600px;
-  margin: auto;
-  background: #13263d;
-  padding: 25px;
+.staff-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.staff-card {
+  background: #0d1b2a;
+  border: 1px solid #00ff88;
+  padding: 20px;
   border-radius: 12px;
-  text-align: left;
-  border: 1px solid #1f3a5a;
-}
-
-.staff-box ul {
-  list-style: none;
-  padding: 0;
-}
-
-.staff-box li {
-  font-size: 18px;
-  color: #ddd;
-  margin: 10px 0;
+  width: 260px;
+  text-align: center;
   transition: 0.3s;
 }
 
-/* Hover animation */
-.staff-box li:hover {
-  color: #00ffcc;
-  transform: translateX(10px);
+.staff-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px #00ff88;
+}
+
+.staff-card h3 {
+  color: #00ff88;
+}
+
+.staff-card p {
+  color: #ccc;
+}
+
+.staff-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #00ff88;
+  color: #000;
+  border-radius: 6px;
+  font-size: 12px;
 }
